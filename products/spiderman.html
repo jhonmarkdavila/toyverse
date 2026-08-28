@@ -60,6 +60,66 @@
         </table>
     </main>
 
+    <h2>Order Enquiry</h2>
+
+<p>
+    Interested in getting this Spider-Man Lego? Fill out the form below
+    to ask about ordering this product.
+</p>
+
+<form>
+    <p>
+        <label for="quantity">Quantity</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="20">
+    </p>
+
+    <fieldset>
+        <legend>Delivery method</legend>
+
+        <p>
+            <input type="radio" id="standard" name="delivery" value="standard">
+            <label for="standard">Standard Delivery</label>
+        </p>
+
+        <p>
+            <input type="radio" id="pickup" name="delivery" value="pickup">
+            <label for="pickup">Store Pickup</label>
+        </p>
+
+        <p>
+            <input type="radio" id="express" name="delivery" value="express">
+            <label for="express">Express Delivery</label>
+        </p>
+    </fieldset>
+
+    <p>Optional extras</p>
+
+    <p>
+        <input type="checkbox" id="gift-wrap" name="extras" value="gift-wrap">
+        <label for="gift-wrap">Gift Wrapping</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="express-handling" name="extras" value="express-handling">
+        <label for="express-handling">Express Handling</label>
+    </p>
+
+    <p>
+        <input type="checkbox" id="special-packaging" name="extras" value="special-packaging">
+        <label for="special-packaging">Special Packaging</label>
+    </p>
+
+    <p>
+        <label for="email">Contact Email</label><br>
+        <input type="email" id="email" name="email" required>
+    </p>
+
+    <p>
+        <button type="submit">Send enquiry</button>
+    </p>
+</form>
+
+
     <footer>
         <p>&copy; 2026 ToyVerse</p>
     </footer>
