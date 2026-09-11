@@ -9,6 +9,12 @@
 }
 
 /* 2. Base Styles */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -77,6 +83,12 @@ footer {
 }
 
 /* 4. Components*/
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
 .product-card {
     background-color: var(--white);
     border-radius: 10px;
@@ -91,12 +103,19 @@ footer {
     margin-top: 0;
 }
 
-.product-card img {
+.place-card img {
     max-width: 100%;
-    height: auto;
+    height: 180px;
+    object-fit: cover;
 }
 
+
 /* 5. Contact Form */
+form {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
 fieldset {
     padding: 20px;
     border-radius: 10px;
@@ -110,12 +129,25 @@ legend {
     padding: 0 8px;
 }
 
-input,
+input[type="text"],
+input[type="email"],
 textarea {
     padding: 10px;
     font-size: 16px;
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 0;
 }
 
 textarea {
